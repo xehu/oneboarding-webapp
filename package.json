@@ -1,27 +1,32 @@
 {
-  "name": "oneboarding-webapp",
-  "version": "1.0.0",
-  "description": "Web application for the frontend part of Onebording, our hackathon project for Microsoft OneWeek Hackathon",
-  "main": "index.js",
+  "private": true,
+  "homepage": "https://create-react-app-redux.now.sh",
+  "scripts": {
+    "deploy": "now && now alias",
+    "start": "react-scripts start",
+    "now-start": "serve -s ./build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "precommit": "pretty-quick --staged"
+  },
+  "devDependencies": {
+    "prettier": "1.13.7",
+    "react-scripts": "1.1.4"
+  },
   "dependencies": {
+    "connected-react-router": "4.3.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-redux": "5.0.7",
+    "react-router": "4.3.1",
+    "react-router-dom": "4.3.1",
     "react-simple-chatbot": "^0.3.3",
-    "styled-components": "^2.4.1"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xehu/oneboarding-webapp.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/xehu/oneboarding-webapp/issues"
-  },
-  "homepage": "https://github.com/xehu/oneboarding-webapp#readme"
+    "redux": "4.0.0",
+    "redux-thunk": "2.3.0",
+    "sanitize.css": "6.0.0",
+    "serve": "9.3.0",
+    "styled-components": "^2.4.1",
+    "yarn": "^1.7.0"
+  }
 }
